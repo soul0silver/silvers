@@ -6,6 +6,7 @@
 label{
     padding: 2rem;
     grid-columns:1/4;
+    color:  rgb(245, 37, 0) ;
 }
 .left-side{
    grid-template-columns: 1/2;
