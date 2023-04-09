@@ -1,0 +1,9 @@
+img {
+          float: right;
+        }
+        img {
+          float: none;
+        }
+        div {
+          clear: left;
+        }

@@ -1,0 +1,28 @@
+.center 
+{
+text-align: center;
+border: 3px solid green;
+}
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
+.right {
+position: absolute;
+right: 0px;
+width: 300px;
+border: 3px solid #73AD21;
+padding: 10px;
+}
+.center2 {
+padding: 70px 0;
+border: 3px solid green;
+}
+.center p {
+line-height: 1.5;
+display: inline-block;
+vertical-align: middle;
+}
+        

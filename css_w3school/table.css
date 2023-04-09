@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+th{
+      text-shadow: 0ch;    
+}
+td{
+          font-size: 20pt;
+}
