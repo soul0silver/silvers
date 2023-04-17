@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Methods</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+const person = {
+  firstName : "Nguyen",
+  lastName  : "Dat",
+  age     : 24,
+  eyeColor  : "brown",
+  fullName : function(){
+          return this.firstName + " " + this.lastName;
+  }
+};
+
+document.getElementById("demo").innerHTML = person.fullName;
+document.getElementById("demo1").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>
