@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Objects</h1>
+
+<p>Using an object constructor:</p>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "vietnamese";
+}
+
+const me = new Person("Nguyen", "dat", 50, "brown");
+
+
+document.getElementById("demo").innerHTML =
+"My nationality is " + me.nationality;
+</script>
+
+</body>
+</html>
