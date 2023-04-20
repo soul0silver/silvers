@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
+          <style>
+                    #panel{
+                              margin: 100px;
+                              padding: 20px;
+                              border: 10px solid rgb(141, 37, 37);
+                              text-align: center;
+                    }
+          </style>
+</head>
+<body>
+          <a href="https://www.w3schools.com/">new in vn</a>
+          <div class="red">this is div tag</div>
+          <button id="hll"></button>
+          <button id="data"></button>
+          <script>
+                    //công thức gọi hàm chung
+                    $(document).ready(function(){
+                              //kết nối đến 1 hàm
+                    })
+
+                    // dùng jquery để kết nối đến sự kiện
+                    $(document).ready(function(){
+                    $("a").click(function(event){
+                              alert("hello");
+                              event.preventDefault();
+                    })
+          });
+          $(document).ready(function(){
+                    $(".red").css("color","red")
+          })
+          //ket hop voi DOM
+          //lay noi dung tai lieu
+          //$(selector).html()or $(selector).text()
+          $(document).ready(function(){
+                    $('#hll').click(function(){
+                              alert($("p").html())
+                    })
+                    $("#data").click(function(){alert($("p").text())})
+          })
+
+          $(document).ready(function(){
+                    $("#panel").hide();
+                    $('#click').click(function(){
+                              $('#panel').slideToggle();
+                    })
+          })
+          </script>
+          <p>content</p>
+          <button id="click"> click</button>
+          <div id="panel">hello</div>
+</body>
+</html>
