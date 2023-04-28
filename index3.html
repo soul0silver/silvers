@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>example</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <style>
+                    *{
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                    }
+                    body{
+                              background: #f6f5f7;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              flex-direction: column;
+                              font-family: 'Montserrat', sans-serif;
+                              height: 100vh;
+                              margin: -20px 0 50px;
+                    }
+                    body div{
+                              display: block;        
+                    }
+                    .container{
+                              position: relative;
+                              overflow: hidden;
+                              width: 768px;
+                              max-width: 100%;
+                              min-height: 480px;
+                              background-color: #fff;
+                              border-radius: 10px;
+                              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                    }
+                    form{
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              flex-direction: column;
+                              height: 100%;
+                              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+                              padding: 0 0 70% 0;
+                              flex-wrap: nowrap;
+                    }
+                    .tittle{
+                              font-size: 25px;
+                              text-align: center;
+                              position: relative;
+                              height: 15%;
+                              margin: 10px 0 0 0;
+                    }
+                    form div input{
+                              width: 60%;
+                              height: 100%;
+                              border-radius: 8px;
+                              outline: none;
+                              border: 1px solid #c4c4c4;
+                              box-shadow: 2px 1px 4px rgba(0,0, 0, 0.1);
+                              font-size: 14pt;
+                              padding-left: 25px;
+                              margin-left: 55px;
+                              margin-top: 1px;
+                              margin-bottom: 1px;
+                    }
+                    form div label{
+                              width:10%;
+                              height: 100%;
+                              float: left;
+                              margin-left: 23px;
+                              margin-top: 1px;
+                              margin-bottom: 1px;
+                    }
+                    form div{
+                              position: relative;
+                    }
+                    input:focus{
+                              border: 1px solid#f279;
+                    }
+                    form div i{
+                              left: 120px;
+                              margin-top: 4px;
+                              margin-bottom: 1px;
+                              position: absolute;
+                    }
+                    form div .success-icon{
+                              position: absolute;
+                              padding: 0px;
+                              left: 92%;
+                    }
+                    form div .fail-icon{
+                              position: absolute;
+                              padding: 0px;
+                              left: 92%;       }        
+                    
+                   .left{
+                              left: 0;
+                              width: 50%;
+                              background-image: url('/demo/_gZ.svg');
+                              background-color: #bb7e7e;
+                              padding: 250px 100px;
+                              float: left;
+                              height: 100%;
+                    }        
+                    .right{
+                              float: right;
+                              position: absolute;
+                              left: 50%;
+                              width: 50%;
+                              height: 100%;
+                              overflow: hidden;
+                              margin-bottom: 20px;
+                    } 
+                    div img{
+                              position: absolute;
+                              padding: 0 0 10px 10px;
+                              top: 10px;
+                              left: 2px;
+                              width: 150px;
+                              height: 50px;
+                    }
+                    .social{
+                              position: relative;
+                              top: 20px;
+                              display: flex;
+                              flex-direction: row;
+                              align-items: center;
+                    }         
+                    .social .ic1{
+                              width: 160px;
+                              height: 60px;
+                              margin: 1px;
+                              position: absolute;
+                              left: 5%;
+                              background-color: #d82736fb;
+                              border: 1px solid #3b0cd3;
+                              border-radius: 5px;
+                              padding: 2px;
+                              text-align: center;
+
+                    }
+                    .social .ic2{
+                              width: 160px;
+                              height: 60px;
+                              margin: 1px;
+                              position: absolute;
+                              left: 53%;
+                              background-color: #05056c;
+                              border: 1px solid #3b0cd3;
+                              border-radius: 5px;
+                              padding: 2px;
+                              text-align: center;
+                              
+                              
+
+                    } 
+                    .social .ic2 a{
+                              text-decoration: none;
+                              font-size: 16pt;
+                              font-family: 'Times New Roman', Times, serif;
+                              padding-left: 30px;
+                              color: #f6f5f7;
+                    }
+                    .social .ic1 a{
+                              text-decoration: none;
+                              font-size: 16pt;
+                              font-family: 'Times New Roman', Times, serif;
+                              padding-left: 30px;
+                              color: #f6f5f7;
+                    }
+                    .right .or{
+                              color: #607d8b;
+                              text-align: center;
+                              margin: 30% 0 0 0;
+                              font-weight: 500;
+                              display: block;
+                              font-family: Verdana, Geneva, Tahoma, sans-serif;
+                              position: relative;
+                    }
+                    
+                    .right .or span{
+                              display: inline-block;
+                              padding: 10px 30px;
+                              background-color: #fff;
+                              position: relative;
+                              z-index:2;
+                    }
+                    .right .or:after{
+                              position: absolute;
+                              content: "";
+                              width: 100%;
+                              height: 1px;
+                              background-color: #f6f5f7;
+                              top: 50%;
+                              left:0;
+                              transform: translateY(-50%);
+                    }
+                    .social div a i{
+                              position: absolute;
+                              top: 16px;
+                              margin: 1px;
+                              left: 5px;
+                              justify-content: center;
+                    }
+
+                    div #btn{
+                              top: 10px;
+                              color: #f9fcfb;
+                              text-align: center;
+                              position: absolute;
+                              border: none;
+                              font-size: 14pt;  
+                              padding: 1px;        
+                              display: block;
+                              width: 90%;
+                              outline: none;
+                              border-radius: 8px;
+                              height: 32px;
+                              left: 20px;
+                              background-color: #20b46f;
+                    }
+          </style>
+</head>
+<body>
+          <div class="container">
+                    <div class="left"><img class="img" src="/demo/_go.svg"></div>
+                    <div class="right">
+                              <div class="tittle">Get started</div>
+                              <div class="social">
+                                        <div class="ic1">
+                                                  <a href="#"><i class="fab fa-google fa-lg" style="color: #f8f4f4;"></i>Sign in with google</a>
+                                                  
+                                        </div>
+                                        <div class="ic2"><a href="#"><i class="fab fa-facebook-f fa-lg" style="color: #f6f5f7;"></i><span>Sign in with<br>facebook</span></a></div>
+                              </div> 
+                              <div class="or"><span>OR</span></div>
+                              <form id="form">
+                              
+                              <div class="sign-in">
+                                        <div >
+                                                  <label for="Username">Username</label>
+                                                  <i class="fas fa-user usname"></i>
+                                                  <input type="text" name="username" placeholder="Nguyen Phu Trong" >
+                                                  <i class="far fa-check-circle success-icon"></i><i class="fas fa-exclamation-circle fail-icon"></i>
+                                                  <div class="error"></div>
+                                        </div>
+                                        
+                                        <div>
+                                                  <label for="email">Email</label>
+                                                  <i class="far fa-envelope"></i>
+                                                  <input type="email" name="email" placeholder="abc@email.com">
+                                                  <i class="far fa-check-circle success-icon"></i><i class="fas fa-exclamation-circle fail-icon"></i>
+                                        </div>
+                                        <div>
+                                                  <label for="password">password</label>
+                                                  <i class="fas fa-lock"></i>
+                                                  <input type="password" name="password" placeholder="password here">
+                                                  <i class="far fa-check-circle success-icon"></i><i class="fas fa-exclamation-circle fail-icon"></i>
+                                        </div>
+                                        <div>
+                                                  <button id="btn" type="submit">sign in</button>
+                                        </div>
+                              </div>
+                              </form>
+                    </div>
+          </div>
+</body>
+</html>

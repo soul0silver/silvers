@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>example</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <div class="container">
+                    <div class="left"><img class="img" src="/demo/_go.svg"></div>
+                    <div class="right">
+                              <div class="tittle">Get started</div>
+                              <div class="social">
+                                        <div class="ic1">
+                                                  <a href="#"><i class="fab fa-google fa-lg" style="color: #f8f4f4;"></i>Sign in with google</a>
+                                                  
+                                        </div>
+                                        <div class="ic2"><a href="#"><i class="fab fa-facebook-f fa-lg" style="color: #f6f5f7;"></i><span>Sign in with<br>facebook</span></a></div>
+                              </div> 
+                              <div class="or"><span>OR</span></div>
+                              <form id="form" onsubmit="return false">
+                              
+                              <div class="sign-in">
+                                        <div>
+                                                  <label for="Username">Username</label>
+                                                  <i class="fas fa-user usname"></i>
+                                                  <input type="text" name="username" placeholder="Nguyen Phu Trong" required onblur="check1()">
+                                                  <i class="far fa-check-circle success-icon user-r"></i><i class="fas fa-exclamation-circle fail-icon user-w"></i>
+                                                  <div id="er"><p class="error1"></p></div>
+                                        </div>
+                                        
+                                        <div>
+                                                  <label for="email">Email</label>
+                                                  <i class="far fa-envelope"></i>
+                                                  <input type="email" name="email" placeholder="abc@email.com" required onblur="check2()">
+                                                  <i class="far fa-check-circle success-icon e-r"></i><i class="fas fa-exclamation-circle fail-icon e-w"></i>
+                                                  <div id="er"><p class="error2"></p></div>
+                                        </div>
+                                        <div>
+                                                  <label for="password">Password</label>
+                                                  <i class="fas fa-lock"></i>
+                                                  <input type="password" name="password" placeholder="password here" required>
+                                                  <i class="far fa-check-circle success-icon p-r"></i><i class="fas fa-exclamation-circle fail-icon p-w"></i>
+                                                  <div id="er"><p class="error3"></p></div>
+                                        </div>
+                                        <div>
+                                                  <button id="btn" type="submit">Log in</button>
+                                        </div>
+                              </div>
+                              </form>
+                    </div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="demo.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

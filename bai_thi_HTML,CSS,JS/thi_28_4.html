@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <style>
+                    *{
+                              margin: 0;
+                              padding: 0%;
+                    }
+                    body{
+                              display: flex;
+                              align-items: center;
+                              flex-direction: column;
+                              flex-wrap: nowrap;
+                    }
+                    body div{
+          display: block;        
+}
+                    form{
+                              display: flex;
+                              align-items: center;
+                              flex-direction: column;
+                              position: relative;
+                              margin: 0px;
+                              padding: 0px;
+                    }
+                    
+                    form div{
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              top: 40px;
+                              width: 100%;
+                    }
+                    .tittle{
+                              width: 90%;
+                              height: 30px;
+                              font-family: Arial, Helvetica, sans-serif;
+                    }
+          
+                    
+                    .social{
+                              position: relative;
+                              top: 40px;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                    }         
+                    .social .ic1{
+                              width: 300px;
+                              height: 40px;
+                              margin: 0px;
+                              position: absolute;
+                              left: 0%;
+                              background-color: #4d7ee8fb;
+                              border: 1px solid #576bedfb;
+                              border-radius: 5px;
+                              padding-left: 0px;
+                              text-align: center;
+                              box-shadow: 0px 4px 5px rgba(100, 172, 216, 0.838);
+                    }
+.social .ic2{
+          width: 300px;
+          height: 40px;
+          margin: 0px;
+          position: absolute;
+          left: 0%;
+          top: 100px;
+          background-color: #3838e8;
+          border: 1px solid #481cd8;
+          border-radius: 5px;
+          padding-left: 0px;
+          text-align: center;
+          box-shadow: 0px 4px 5px rgba(72, 13, 210, 0.5);
+          
+
+} 
+.social .ic2 a{
+          text-decoration: none;
+          font-size: 14pt;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 10px;
+          color: #f6f5f7;
+}
+.social .ic1 a{
+          text-decoration: none;
+          font-size: 14pt;
+          font-family: 'Times New Roman', Times, serif;
+          padding:10px;
+          color: #f6f5f7;
+}
+form .or{
+          top: 200px;
+          width: 300px;
+          color: #607d8b;
+          text-align: center;
+          margin: 3px 0 0 0;
+          font-weight: 500;
+          display: block;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          position: relative;
+}
+
+form .or span{
+          display: inline-block;
+          padding: 2px 30px;
+          background-color: #fff;
+          position: relative;
+          z-index:2;
+}
+form .or:after{
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: #e5dbef;
+          top: 70%;
+          left:0;
+          transform: translateY(-50%);
+}
+form .sign-in{
+top: 180px;
+}
+.sign-in div{
+          margin: 1px;
+          padding: 0px;
+          width: 300px;
+}
+.sign-in .user input,.sign-in .email input,.sign-in .pass input,.sign-in .repeat-pass input,.sign-in .user input{
+          width: 83%;
+          height: 100%;
+          border-radius: 2px;
+          outline: none;
+          border: 1px solid #c4c4c4;
+          box-shadow: 2px 1px 4px rgba(0,0, 0, 0.1);
+          font-size: 12pt;
+          padding-left: 25px;
+          padding-right: 25px;
+          margin-left: 0px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+}
+.sign-in div i{
+          left: 3px;
+          top: 4px;
+          margin-top: 0px;
+          margin-bottom: 1px;
+          position: absolute;
+          
+}
+form div{
+          position: relative;}
+
+.telephone{
+          display: inline;
+          padding: 0px;
+          width: 300px;
+          }
+.telephone select{
+          height: 24px;
+          width: 70px;
+          left: 0px;
+          padding-left: 20px;
+          right: 70px;
+}
+.telephone input{
+          width: 75%;
+          height: 20px;
+          right: 0;
+
+}
+.job select{
+          width: 100%;
+          height: 27px;
+          padding-left: 20px;
+}
+button {
+          width: 100%;
+          height: 30px;
+          background-color: #6135f4;
+          border: #3838e8;
+          border-radius: 5px;
+          color: #e5dbef;
+}
+.already {
+          top: 50px;
+          text-align: center;
+          display: inline;
+          width: 300px;
+}
+.already a{
+          text-decoration: none;
+}
+#er1,#er2,#er4{
+          top:2px;
+          height: 15px;
+          padding-left: 25px;
+          padding-right: 25px;
+          margin-left: 0px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+}
+#er3{
+          top:2px;
+          height: 15px;
+          padding-left: 25px;
+          padding-right: 25px;
+          margin-left: 0px;
+          margin-top: 0px;
+          margin-bottom: 0px;  
+}
+p{
+       color: rgb(202, 18, 18);
+       font-size: 9pt;
+       font-family: 'Times New Roman', Times, serif;       
+}
+
+          </style>
+</head>
+<body>
+          <div>
+                    <form action="">
+                              <div class="tittle"><h2>Creat Account</h2>
+                                        <br>
+                                        Get started with your free account
+                              </div>
+                              <div class="social">
+                                        <div class="ic1">
+                                                  <a href="#"><i class="fa-brands fa-twitter" style="color: #fcfcfd;"></i>Login via Twitter</a>        
+                                        </div>
+                                        <div class="ic2"><a href="#"><i class="fa-brands fa-facebook-f"></i><span>Login via with facebook</span></a></div>
+                              </div> 
+                              <div class="or"><span>OR</span></div>
+                              <div class="sign-in">
+                                        <div class="user">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" name="username" placeholder="Full name" required>
+                                        <div id="er1"><p class="error1"></p></div>
+                                        </div>
+                                        <div class="email">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="text" name="email" placeholder="email address" required>
+                                        <div id="er2"><p class="error2"></p></div>
+                                        </div>
+                                        <div class="telephone">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <select name="" id="">
+                                                  <option value="">+84</option>
+                                        </select><input type="tel" class="phone1" required>
+                                        <div id=""><p class="error"></p></div>
+                                        </div>
+                                        <div class="job"><i class="fa-solid fa-building"></i>
+                                        <select name="" id="">
+                                                  <option value="">Designer</option>
+                                                  <option value="">Manager</option>
+                                                  <option value="">Accaunting</option>
+                                        </select>
+                                        <div id=""><p class="error"></p></div></div>
+
+                                        <div class="pass"><i class="fa-solid fa-lock"></i>
+                                        <input type="password" placeholder="creat password" name="password" pattern="" required>
+                                        <div id="er3"><p class="error3"></p></div>
+                                        </div>
+                                        <div class="repeat-pass"><i class="fa-solid fa-lock"></i>
+                                                  <input type="password" name="repeat-password" placeholder="repeat password" required>
+                                                  <div id="er4"><p class="error4"></p></div>
+                                                  </div>                             
+                              
+                              <div ><button>Creat Account</button></div>
+                              
+                    </form>
+          <div class="already">Have account?<a href="">Log in</a></div>          
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="thi.js"></script>
+</body>
+</html>
