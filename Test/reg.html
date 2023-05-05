@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+	<form>
+
+		<div class="container">
+			<h1 style="text-align: center;">Create Account</h1>
+			<p style="text-align: center;">Get started with your free account</p>
+			<button style="background-color: #00acee;" type="button">Login via Twitter</button>
+			<button style="background-color: #3b5998;" type="button">Login via Facebook</button>
+            <p style="text-align: center;">Or</p>
+
+			<div>
+                <label for="fullname"></label>
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Full name">
+            </div>
+
+			<div>
+                <label for="email"></label>
+                <i class="far fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="Email address">
+            </div>
+			<label for="jobtype" ><b></b></label>
+            <i class="fas fa-building"></i>
+			<select name="jobtype">
+                <option value="Select job type">Select job type</option>
+				<option value="webdeveloper">Web Developer</option>
+				<option value="graphicdesigner">Graphic Designer</option>
+				<option value="projectmanager">Project Manager</option>
+			</select>
+
+			<label for="password"><b></b></label>
+            <i class="fas fa-lock"></i> 
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<label for="password-repeat"><b></b></label>
+            <i class="fas fa-lock"></i>
+			<input type="password" placeholder="Repeat Password" name="password-repeat" required>
+
+			<button style="background-color: #00acee;" type="submit">Create Account</button>
+            <div>
+             <p style="text-align: center;">Have an account? <a href="">Log In</a></p>
+            </div>
+		</div>
+	</form>
+    <script src="js/js.js"></script>
+</body>
+</html>

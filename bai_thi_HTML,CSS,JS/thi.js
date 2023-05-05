@@ -3,7 +3,7 @@ $(document).ready(function () {
                     uname=$('input[name="username"]').val();
                     const min=3,max=25;
                     if (uname==="")
-                    $('.error1').text("Cannot blank");
+                    $('.error1').text("Cannot be blank");
                     else if (uname.length<3||uname.length>25) $('.error1').text("user name must include 3-25 charactors");
                     else $('.error1').text("");
           });
