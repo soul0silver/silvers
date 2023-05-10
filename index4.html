@@ -1,44 +1,17 @@
 <!DOCTYPE html>
-    <head>
-            <title>Hello</title> 
-            <meta charset="UTF-8">
-            <meta http-equiv="X-US-Compatible"content="IE=edge">     
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <div class="parent">
-        <header> 
-            <div>
-            <form action="">
-            <label for="uname"> user name</label>
-            <input type="text" placeholder="Your user name">
-            <div class="left"></div>
-            <label for="password">password </label>
-            <input type="password" required name="password" placeholder="Your password">
-            <input type="submit" value="Login">
-            </form>
-        </div>
-            <h1>
-                web menu
-            </h1>
-            <nav>
-                <a href="reg.html">Register</a>
-                <a href="#about">About us</a>
-                <a href="teacher">Instructors</a>
-                <a href="#feedback">Feedback</a>
-            </nav>
-        </header>
-        <main  >
-           <article>post 1</article>
-           <article>post 2</article>
-        </main>     
-        <nav>nav</nav>
-        <aside>Aside</aside>
-
-        <footer>
-            footer
-        </footer>
-    </div>   
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="" ng-init="name='fpt-aptech'">
+        <p>{{name}}</p><!--binding data-->
+    </div>
+    <script>
+    </script>
+</body>
 </html>
