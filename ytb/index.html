@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js" integrity="sha512-niUuJjkxAzo4wrTq1hZUHVZ39m6DI4/TljvknrBk2NTEZu8oJDijPF2Ud7RaNtBMz+FWX3Gp/QaD5P5ZeUI/2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+          <section ng-app="youtubeApp" ng-controller="mainController as main">
+                    <div class="container">
+                              <h2 ng-bind="main.message"></h2>
+                              <div class="youtube-thumbnail col-md-4" ng-repeat="video in main.videoListing">
+                                        <a ng-href="https://www.youtube.com/watch?v={{vid.id.videoId}}" target="_blank">
+                                        <img ng-src={{vid.snippet.thumbnails.medium.url}} alt="">
+                                        <p ng-bind="vid.snippet.title"></p>
+                              </a>
+                              </div>
+                    </div>
+          </section>
+          <script src="data.js"></script>
+</body>
+</html>
