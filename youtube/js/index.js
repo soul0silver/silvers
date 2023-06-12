@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     inputSearch.onkeydown = function (event) {
         if (event.keyCode == 13) { loadVideo(this.value) }
     }
-    loadVideo("Đen vâu");
+    loadVideo("Dự báo thời tiết hôm nay mưa");
 });
 
 var modal = document.getElementById('myModal');
